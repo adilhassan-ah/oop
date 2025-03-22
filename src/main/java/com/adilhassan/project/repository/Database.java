@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    List<Student> students;
+    ArrayList<Student> students;
 
     public Database() {
         this.students = new ArrayList<>();

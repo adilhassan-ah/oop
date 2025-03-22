@@ -65,6 +65,7 @@ public class StudentService {
 
     public Student findStudentWithHighestMarks() {
         List<Student> students = database.findAll();
+
         Student studentWithHighestMarks = students.get(0);
 
         for (Student student : students) {
@@ -97,6 +98,6 @@ public class StudentService {
             totalMarks += student.getMarks();
         }
 
-        return (double) totalMarks / students.size();
+        return (double) totalMarks /students.size();
     }
 }

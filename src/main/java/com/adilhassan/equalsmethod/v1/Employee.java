@@ -32,9 +32,4 @@ public class Employee extends Object {
         ", id=" + id +
         '}';
   }
-
-  public boolean equals(Object obj) {
-    return (this == obj);
-  }
-
 }

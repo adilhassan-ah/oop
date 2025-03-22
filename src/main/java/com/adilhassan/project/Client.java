@@ -6,7 +6,7 @@ import com.adilhassan.project.service.StudentService;
 
 import java.util.List;
 
-public class Runner {
+public class Client {
     private static Database database = new Database();
     private static StudentService studentService = new StudentService(database);
 
@@ -34,7 +34,7 @@ public class Runner {
         System.out.println("countStudents: " + studentService.countStudents());
         System.out.println("---");
 
-        System.out.println("studentService.deleteStudent(name: Admed, rollNumber: 2, marks: 75)");
+        System.out.println("studentService.deleteStudent(name: Ahmed, rollNumber: 2, marks: 75)");
         Student studentToDelete = new Student("Ahmed", 2, 75);
         studentService.deleteStudent(studentToDelete);
         studentService.printAllStudents();

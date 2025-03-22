@@ -2,7 +2,7 @@ package com.adilhassan.project.domain;
 
 import java.util.Objects;
 
-public class Student {
+public class Student extends Object {
     private String name;
     private int rollNumber;
     private int marks;
@@ -46,6 +46,7 @@ public class Student {
 
     @Override
     public boolean equals(Object o) {
+        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
         return rollNumber == student.rollNumber && marks == student.marks && Objects.equals(name, student.name);

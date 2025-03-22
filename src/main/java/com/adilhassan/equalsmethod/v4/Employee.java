@@ -1,4 +1,4 @@
-package com.adilhassan.arraylist;
+package com.adilhassan.equalsmethod.v4;
 
 import java.util.Objects;
 
@@ -35,17 +35,31 @@ public class Employee {
         '}';
   }
 
+
+//  @Override
+//  public boolean equals(Object o) {
+//    if (this == o) {
+//      return true;
+//    }
+//
+//    if (o == null || this.getClass() != o.getClass()) {
+//      return false;
+//    }
+//
+//    Employee employee = (Employee) o;
+//    return id == employee.id && Objects.equals(name, employee.name);
+//  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
       return true;
     }
 
-    if (o == null || getClass() != o.getClass()) {
+    if (!(o instanceof Employee employee)) {
       return false;
     }
 
-    Employee employee = (Employee) o;
     return id == employee.id && Objects.equals(name, employee.name);
   }
 

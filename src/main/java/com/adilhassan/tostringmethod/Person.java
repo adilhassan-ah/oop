@@ -1,6 +1,6 @@
 package com.adilhassan.tostringmethod;
 
-public class Person {
+public class Person extends Object {
   private String name;
   private int age;
 
@@ -27,9 +27,7 @@ public class Person {
 
   @Override
   public String toString() {
-    return "Person{" +
-            "name='" + name + '\'' +
-            ", age=" + age +
-            '}';
+    return "name :" + name +
+           ", age : " + age;
   }
 }

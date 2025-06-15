@@ -19,17 +19,24 @@ public class Runner {
 
 
 //    demo how garbage collection works and show objects on the heap
-//    public static void main(String[] args) throws InterruptedException {
-//        Person adil = new Person("Adil", 20);
-//        Person hassan = new Person("Hassan");
-//        Person ali = new Person();
-//        ali = null;
-//        System.out.println(adil);
-//    }
+    public static void main(String[] args) throws InterruptedException {
+        Person adil = new Person("Adil", 20);
+        Person hassan = new Person("Hassan");
+        Person ali = new Person("Ali", 29);
+        m1();
+        ali = null;
+        System.gc();
+        System.out.println(adil);
+    }
+//
+    public static void m1() {
+        Person amir = new Person("Amir", 33);
+        System.out.println(amir);
+    }
 
 
 //    demo how stacks are created
-//    public static void main(String[] args) {
+//    public static void main(String[] args) throws InterruptedException {
 //        int i = 10;
 //        Job job = new Job();
 //        ThreadGroup threadGroup = new ThreadGroup("jobThreadGroup");

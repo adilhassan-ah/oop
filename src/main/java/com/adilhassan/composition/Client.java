@@ -5,6 +5,7 @@ public class Client {
     Tyre tyre = new Tyre();
     System.out.println(tyre.getTyrePressure());
     tyre.reduceTyrePressure();
+    tyre = null;
     System.out.println(tyre.getTyrePressure());
   }
 }

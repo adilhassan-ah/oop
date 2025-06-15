@@ -15,7 +15,7 @@ public class Client {
     employees.add(e2);
     employees.add(e3);
 
-    // you are asking to user to enter the name and id of the employee you want to remove
+//    // you are asking to user to enter the name and id of the employee you want to remove
     Scanner scanner = new Scanner(System.in);
     var name = scanner.nextLine();
     var id = scanner.nextInt();

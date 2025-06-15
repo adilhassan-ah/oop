@@ -30,7 +30,7 @@ public class Client {
 
         cast(animal);
 
-        Animal animal1 = new Animal();
+        Animal animal1 = new Bat();
         Lion lion3 = (Lion) animal1; // downcasting - be careful!!!
     }
 

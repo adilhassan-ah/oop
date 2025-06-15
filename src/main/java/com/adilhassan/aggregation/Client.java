@@ -5,6 +5,7 @@ public class Client {
     Engine v8 = new Engine(780);
     Engine v6 = new Engine(600);
     Car car = new Car("manual", v6);
+    car = null;
     System.out.println(car);
   }
 }

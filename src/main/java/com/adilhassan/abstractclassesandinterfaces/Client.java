@@ -1,5 +1,8 @@
 package com.adilhassan.abstractclassesandinterfaces;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Client {
     public static void main(String[] args) {
 
@@ -9,20 +12,20 @@ public class Client {
         for (var flyable : flyables) {
             flyable.fly();
         }
-//
-//        for (Animal animal : animals) {
-//            animal.eat();
-//            animal.makeSound();
-//
-//            if (animal instanceof Swimable) {
-//                ((Swimable) animal).swim();
-//            }
-//
-//            if (animal instanceof Flyable) {
-//                ((Flyable) animal).fly();
-//            }
-//
-//            System.out.println("------------------");
-//        }
+
+        for (Animal animal : animals) {
+            animal.eat();
+            animal.makeSound();
+
+            if (animal instanceof Swimable) {
+                ((Swimable) animal).swim();
+            }
+
+            if (animal instanceof Flyable) {
+                ((Flyable) animal).fly();
+            }
+
+            System.out.println("------------------");
+        }
     }
 }

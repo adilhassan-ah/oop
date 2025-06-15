@@ -1,5 +1,5 @@
 package com.adilhassan.abstractclassesandinterfaces;
 
-public interface Flyable {
-    void fly();
+public abstract interface Flyable {
+    public abstract void fly();
 }

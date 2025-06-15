@@ -13,7 +13,7 @@ public class Client {
     System.out.println("e1.equals(e2): " + e1.equals(e2));
     /*
      public boolean equals(Object obj) {
-        return (e1 == e2);
+        return (this == obj);
     }
      */
     // e1 == e2
